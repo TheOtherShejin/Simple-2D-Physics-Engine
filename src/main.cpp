@@ -1,7 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Particle.h"
-#include "Renderer.h"
+#include <Physics2D/Core.h>
 
 const int WIDTH = 600, HEIGHT = 600;
 const int FPS = 60;

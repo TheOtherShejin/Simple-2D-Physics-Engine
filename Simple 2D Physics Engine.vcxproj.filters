@@ -13,33 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Physics2D">
+      <UniqueIdentifier>{17174c45-44a8-4118-ad4b-cf202e622525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics2D">
+      <UniqueIdentifier>{6e9e2b2a-b552-4818-a045-d6266e79df70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics2D\Math">
+      <UniqueIdentifier>{d7aab0fe-8b8a-4c05-9aab-1d6483159673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics2D\Math">
+      <UniqueIdentifier>{8e1a2c3f-8da9-4bd1-96c9-56404bb0c2de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Vector2.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Physics2D\Particle.cpp">
+      <Filter>Source Files\Physics2D</Filter>
     </ClCompile>
-    <ClCompile Include="src\Particle.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Physics2D\Renderer.cpp">
+      <Filter>Source Files\Physics2D</Filter>
     </ClCompile>
-    <ClCompile Include="src\Renderer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Physics2D\Math\Vector2.cpp">
+      <Filter>Source Files\Physics2D\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Physics2D\Core.h">
+      <Filter>Header Files\Physics2D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Vector2.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Physics2D\Math\Vector2.h">
+      <Filter>Header Files\Physics2D\Math</Filter>
     </ClInclude>
-    <ClInclude Include="src\Precisions.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Physics2D\Renderer.h">
+      <Filter>Header Files\Physics2D</Filter>
     </ClInclude>
-    <ClInclude Include="src\Particle.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Physics2D\Precisions.h">
+      <Filter>Header Files\Physics2D</Filter>
     </ClInclude>
-    <ClInclude Include="src\Renderer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Physics2D\Particle.h">
+      <Filter>Header Files\Physics2D</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-#include "Particle.h"
+#include <Physics2D/Particle.h>
 
 Particle::Particle(Vector2 position, Vector2 velocity, real mass) : position(position), velocity(velocity) {
 	SetMass(mass);
@@ -12,13 +12,14 @@ real Particle::GetMass() const {
 }
 
 void Particle::Integrate(real dt) {
+	acceleration = forceAccum * inverseMass;
 	position += velocity * dt + acceleration * 0.5 * dt * dt;
 	velocity += acceleration * dt;
-	acceleration.SetZero();
+	ClearForceAccumulation();
 }
 void Particle::ApplyForce(Vector2 force) {
-	acceleration += force * inverseMass;
+	forceAccum += force;
 }
-void Particle::AddAcceleration(Vector2 acceleration) {
-	this->acceleration += acceleration;
+void Particle::ClearForceAccumulation() {
+	forceAccum.SetZero();
 }

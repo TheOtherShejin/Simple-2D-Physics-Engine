@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "Particle.h"
+#include <Physics2D/Particle.h>
 #include <iostream>
 
 class Renderer {

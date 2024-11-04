@@ -1,9 +1,12 @@
 #pragma once
 
-#include "Vector2.h"
-#include "Precisions.h"
+#include <Physics2D/Math/Vector2.h>
+#include <Physics2D/Precisions.h>
 
 class Particle {
+private:
+	Vector2 forceAccum;
+	void ClearForceAccumulation();
 public:
 	Vector2 position;
 	Vector2 velocity;
@@ -16,5 +19,4 @@ public:
 
 	void Integrate(real dt);
 	void ApplyForce(Vector2 force);
-	void AddAcceleration(Vector2 acceleration);
 };

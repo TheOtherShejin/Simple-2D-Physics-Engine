@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "Precisions.h"
+#include <Physics2D/Precisions.h>
 
 class Vector2 {
 public:
