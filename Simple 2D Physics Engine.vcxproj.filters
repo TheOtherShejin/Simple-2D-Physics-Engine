@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Physics2D\Math">
       <UniqueIdentifier>{8e1a2c3f-8da9-4bd1-96c9-56404bb0c2de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Examples">
+      <UniqueIdentifier>{8542a312-4b1e-4b28-a38d-4a1d4216ceb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Examples">
+      <UniqueIdentifier>{a9ff664a-d2dd-4a4d-8c7c-7f359bdb57ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -42,6 +48,9 @@
     <ClCompile Include="include\Physics2D\Core.h">
       <Filter>Header Files\Physics2D</Filter>
     </ClCompile>
+    <ClCompile Include="src\Examples\TestExample.cpp">
+      <Filter>Source Files\Examples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Physics2D\Math\Vector2.h">
@@ -55,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="include\Physics2D\Particle.h">
       <Filter>Header Files\Physics2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Examples\TestExample.h">
+      <Filter>Header Files\Examples</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -138,6 +138,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="include\Physics2D\Core.h" />
+    <ClCompile Include="src\Examples\TestExample.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Physics2D\Particle.cpp" />
     <ClCompile Include="src\Physics2D\Renderer.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="include\Physics2D\Precisions.h" />
     <ClInclude Include="include\Physics2D\Renderer.h" />
     <ClInclude Include="include\Physics2D\Math\Vector2.h" />
+    <ClInclude Include="src\Examples\TestExample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
