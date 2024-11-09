@@ -16,7 +16,8 @@ public:
 	Particle(Vector2 position, Vector2 velocity, real mass);
 	void SetMass(real mass);
 	real GetMass() const;
+	bool HasInfiniteMass() const;
 
 	void Integrate(real dt);
-	void ApplyForce(Vector2 force);
+	void AddForce(Vector2 force);
 };

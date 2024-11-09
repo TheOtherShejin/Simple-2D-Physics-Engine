@@ -13,6 +13,6 @@ public:
 
 	static void UseWindow(sf::RenderWindow* window);
 	static void Clear(sf::Color color = sf::Color::Black);
-	static void DrawParticle(Particle* particle, real radius, sf::Color color);
+	static void DrawCircle(Vector2 position, real radius, sf::Color color);
 	static void Display();
 };

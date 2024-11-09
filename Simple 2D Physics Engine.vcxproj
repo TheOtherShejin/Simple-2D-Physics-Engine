@@ -138,17 +138,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="include\Physics2D\Core.h" />
+    <ClCompile Include="src\Examples\DragFG.cpp" />
+    <ClCompile Include="src\Examples\GravityFG.cpp" />
     <ClCompile Include="src\Examples\TestExample.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Physics2D\Particle.cpp" />
+    <ClCompile Include="src\Physics2D\ParticleForceRegistry.cpp" />
     <ClCompile Include="src\Physics2D\Renderer.cpp" />
     <ClCompile Include="src\Physics2D\Math\Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Physics2D\Particle.h" />
+    <ClInclude Include="include\Physics2D\ParticleForceGenerator.h" />
+    <ClInclude Include="include\Physics2D\ParticleForceRegistry.h" />
     <ClInclude Include="include\Physics2D\Precisions.h" />
     <ClInclude Include="include\Physics2D\Renderer.h" />
     <ClInclude Include="include\Physics2D\Math\Vector2.h" />
+    <ClInclude Include="src\Examples\DragFG.h" />
+    <ClInclude Include="src\Examples\GravityFG.h" />
     <ClInclude Include="src\Examples\TestExample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

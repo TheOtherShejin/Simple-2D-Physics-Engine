@@ -10,14 +10,19 @@ void Particle::SetMass(real mass) {
 real Particle::GetMass() const {
 	return ((real)1) / inverseMass;
 }
+bool Particle::HasInfiniteMass() const {
+	return (inverseMass <= (real)0);
+}
 
 void Particle::Integrate(real dt) {
+	if (inverseMass <= (real)0) return;
+
 	acceleration = forceAccum * inverseMass;
 	position += velocity * dt + acceleration * 0.5 * dt * dt;
 	velocity += acceleration * dt;
 	ClearForceAccumulation();
 }
-void Particle::ApplyForce(Vector2 force) {
+void Particle::AddForce(Vector2 force) {
 	forceAccum += force;
 }
 void Particle::ClearForceAccumulation() {

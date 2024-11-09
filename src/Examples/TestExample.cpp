@@ -17,7 +17,16 @@ void TestExampleApp::Init() {
 }
 
 void TestExampleApp::Update() {
-	Particle particle(Vector2(50, 10), Vector2(), 20);
+	ParticleForceRegistry forceRegistry;
+	GravityFG gravityFG({ 0.0f, 25.0f });
+	DragFG dragFG(0.8f, 0.9f);
+
+	Particle particle(Vector2(25, 10), Vector2(), 20);
+	Particle particle2(Vector2(75, 10), Vector2(-10, -5), 20);
+
+	forceRegistry.Add(&particle, &gravityFG);
+	forceRegistry.Add(&particle, &dragFG);
+	forceRegistry.Add(&particle2, &gravityFG);
 
 	sf::Clock clock;
 	real dt;
@@ -32,11 +41,13 @@ void TestExampleApp::Update() {
 			}
 		}
 
-		particle.ApplyForce(Vector2(0, 500));
+		forceRegistry.UpdateAllForce(dt);
 		particle.Integrate(dt);
+		particle2.Integrate(dt);
 
 		Renderer::Clear();
-		Renderer::DrawParticle(&particle, 5, sf::Color::Red);
+		Renderer::DrawCircle(particle.position, 5, sf::Color::Red);
+		Renderer::DrawCircle(particle2.position, 5, sf::Color::Blue);
 		Renderer::Display();
 	}
 }

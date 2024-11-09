@@ -19,13 +19,13 @@ void Renderer::Clear(sf::Color color) {
 	window->clear(color);
 }
 
-void Renderer::DrawParticle(Particle* particle, real radius, sf::Color color) {
+void Renderer::DrawCircle(Vector2 position, real radius, sf::Color color) {
 	if (CheckError()) return;
 
 	sf::CircleShape shape(radius, 100);
 	shape.setFillColor(color);
 	shape.setOrigin(radius, radius);
-	shape.setPosition(particle->position.x, particle->position.y);
+	shape.setPosition(position.x, position.y);
 	window->draw(shape);
 }
 

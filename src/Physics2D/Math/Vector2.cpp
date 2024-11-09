@@ -52,7 +52,9 @@ real Vector2::MagnitudeSqrd() {
 	return x * x + y * y;
 }
 Vector2 Vector2::Normalize() {
-	return *this / Magnitude();
+	real mag = Magnitude();
+	if (mag == 0) return *this;
+	return *this / mag;
 }
 void Vector2::SetZero() {
 	x = 0;

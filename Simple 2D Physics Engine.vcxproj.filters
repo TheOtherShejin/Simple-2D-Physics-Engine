@@ -51,6 +51,15 @@
     <ClCompile Include="src\Examples\TestExample.cpp">
       <Filter>Source Files\Examples</Filter>
     </ClCompile>
+    <ClCompile Include="src\Physics2D\ParticleForceRegistry.cpp">
+      <Filter>Source Files\Physics2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Examples\GravityFG.cpp">
+      <Filter>Source Files\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Examples\DragFG.cpp">
+      <Filter>Source Files\Examples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Physics2D\Math\Vector2.h">
@@ -66,6 +75,18 @@
       <Filter>Header Files\Physics2D</Filter>
     </ClInclude>
     <ClInclude Include="src\Examples\TestExample.h">
+      <Filter>Header Files\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics2D\ParticleForceGenerator.h">
+      <Filter>Header Files\Physics2D</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics2D\ParticleForceRegistry.h">
+      <Filter>Header Files\Physics2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Examples\GravityFG.h">
+      <Filter>Header Files\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Examples\DragFG.h">
       <Filter>Header Files\Examples</Filter>
     </ClInclude>
   </ItemGroup>
